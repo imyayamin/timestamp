@@ -1,81 +1,93 @@
+/* Define o estilo básico do corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #948a8a;
-    margin: 0;
-    padding: 20px;
-    color: #141414;
+    font-family: Arial, sans-serif; /* Fonte do texto */
+    background-color: #948a8a; /* Cor de fundo da página */
+    margin: 0; /* Remove espaçamento externo padrão */
+    padding: 20px; /* Espaçamento interno */
+    color: #141414; /* Cor do texto padrão */
 }
 
+/* Criação de variáveis para facilitar a mudança de cores no futuro */
 :root {
-    --nav-background: #8645a0;
-    --nav-border: .2rem solid #9d77e9;
-  }
-  
+    --nav-background: #8645a0; /* Cor de fundo do menu */
+    --nav-border: .2rem solid #9d77e9; /* Cor e espessura da borda do menu */
+}
+
+/* Estilo da barra de navegação (título da página) */
 nav {
-    border: var(--nav-border);
-    background: var(--nav-background);
-    border-radius: 5px;
-    font-size: 20px;
-    padding: .1em;
-    margin: 20px;
-    text-align: center; 
-  }
+    border: var(--nav-border); /* Usa a variável de borda */
+    background: var(--nav-background); /* Usa a variável de cor de fundo */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 20px; /* Tamanho da fonte do título */
+    padding: .1em; /* Espaçamento interno do menu */
+    margin: 20px; /* Espaçamento externo */
+    text-align: center; /* Centraliza o texto */
+}
 
+/* Estilo da caixa principal do conteúdo */
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #000000;
-    padding: 20px;
-    border-radius: 20px;
-    border:#f8f9fa;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza a caixa na tela */
+    background: #000000; /* Fundo preto */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 20px; /* Bordas bem arredondadas */
+    border: #f8f9fa; /* Define a borda, mas sem espessura definida aqui */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor */
 }
 
+/* Estilo para todos os títulos h1 */
 h1 {
-    text-align: center;
-    color: white;
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor branca */
 }
 
-p{
-    text-align: center;
-    color: #948a8a;
+/* Estilo para parágrafos */
+p {
+    text-align: center; /* Centralizado */
+    color: #948a8a; /* Cor acinzentada */
 }
 
+/* Espaçamento entre os blocos de entrada */
 .input-conv, .input-comp {
     margin-bottom: 20px;
 }
 
+/* Estilo para os campos de texto */
 input[type="text"] {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: calc(100% - 22px); /* Largura total, menos o espaçamento */
+    padding: 10px; /* Espaço interno */
+    margin-bottom: 10px; /* Espaço abaixo do campo */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 4px; /* Bordas levemente arredondadas */
 }
 
+/* Estilo dos botões */
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #8645a0;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    width: 100%; /* Ocupa a largura total */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #8645a0; /* Cor de fundo roxa */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o ponteiro ao passar o mouse */
 }
 
+/* Efeito ao passar o mouse sobre o botão */
 button:hover {
-    background-color: #7e43f1;
+    background-color: #7e43f1; /* Cor muda levemente */
 }
 
+/* Estilo da área onde o resultado aparece */
 .result {
-    padding: 10px;
-    background-color: #f8f9fa;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 20px;
+    padding: 10px; /* Espaço interno */
+    background-color: #f8f9fa; /* Fundo cinza claro */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 4px; /* Bordas arredondadas */
+    margin-bottom: 20px; /* Espaço abaixo */
 }
 
+/* Estilo para mensagens de erro */
 .error {
-    color: #dc3545;
-    font-weight: bold;
+    color: #dc3545; /* Cor vermelha (bem visível) */
+    font-weight: bold; /* Texto em negrito */
 }
