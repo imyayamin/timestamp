@@ -4,6 +4,7 @@ const app = express(); // Cria uma instância do aplicativo Express
 
 // Rota para a API que lida com a data, opcionalmente recebendo um parâmetro 'date'
 app.get('/api/:date?', (req, res) => { 
+ // A URL será "/api/" com um parâmetro opcional "date". Caso não tenha "date", a data atual do pc é usada.
 
     let dateParam = req.params.date; // Obtém o parâmetro 'date' da URL (se presente)
 
