@@ -1,7 +1,8 @@
 {
-  "name": "trabalho-2",
+  "name": "trabalho",
   "version": "1.0.0",
   "main": "server.js",
+  "description": "Trabalho Timestamp",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --watch server.js"
@@ -9,7 +10,6 @@
   "dependencies": {
     "express": "^4.21.2"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "Aqui vai ter alguns trabalhos ou aulas de programação da matéria Programação 2"
+  "author": "Yasmin",
+  "license": "ISC"
 }

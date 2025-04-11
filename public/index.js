@@ -34,9 +34,16 @@ btnCompare.addEventListener('click', () => {
             diffResult.innerHTML = data.error ? 
                 `<span class="error">${data.error}</span>` :
                 `<strong>Diferença:</strong><br>
-                 ${data.days} dias, ${data.hours} horas,
-                 ${data.minutes} minutos, ${data.seconds} segundos`;
-        })
+                        <hr>
+                        <div>Dias: ${data.days}</div>
+                        <hr>
+                        <div>Horas: ${data.hours}</div>
+                        <hr>
+                        <div>Minutos: ${data.minutes}</div>
+                        <hr>
+                        <div>Segundos: ${data.seconds}</div>
+                        </div>`;
+            })
         .catch(() => {
             diffResult.innerHTML = `<span class="error">Erro ao processar a requisição</span>`;
         });

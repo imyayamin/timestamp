@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f7f7;
+    background-color: #948a8a;
     margin: 0;
     padding: 20px;
     color: #141414;
@@ -27,6 +27,7 @@ nav {
     background: #000000;
     padding: 20px;
     border-radius: 20px;
+    border:#f8f9fa;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -37,6 +38,7 @@ h1 {
 
 p{
     text-align: center;
+    color: #948a8a;
 }
 
 .input-conv, .input-comp {

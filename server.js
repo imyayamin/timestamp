@@ -9,6 +9,7 @@ app.get('/api/:date?', (req, res) => {
 
     let timezone = req.query.tz || 'UTC'; 
     
+    
     let date; 
     
     if (!dateParam) {
